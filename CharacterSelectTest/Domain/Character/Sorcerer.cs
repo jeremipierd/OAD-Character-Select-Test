@@ -3,17 +3,18 @@ using CharacterSelectTest.Domain.Enum;
 
 namespace CharacterSelectTest.Domain.Character;
 
-public sealed class Rogue : Entity.Character
+public sealed class Sorcerer : Entity.Character
 {
-    public Rogue(string name) : base(name, CharacterClass.Rogue)
+    public Sorcerer(string name) : base(name, CharacterClass.Rogue)
     {
-        Health = 95;
+        Health = 80;
         Strength = 9;
-        Intelligence = 8;
+        Intelligence = 80;
         Agility = 15;
         Magic = 0;
         Aura = 0;
     }
 }
 
+/* skopiowalem klase i zamienilem statystyki i imie */
 /* dodalem magic i aura */

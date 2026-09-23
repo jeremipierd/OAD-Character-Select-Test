@@ -10,7 +10,8 @@ public abstract class Character
     public int Strength { get; protected set; }
     public int Intelligence { get; protected set; }
     public int Agility { get; protected set; }
-
+    public int Magic { get; protected set; }
+    public int Aura { get; protected set; }
     protected Character(string name, CharacterClass @class)
     {
         Name = string.IsNullOrWhiteSpace(name) ? @class.ToString() : name.Trim();
@@ -21,6 +22,6 @@ public abstract class Character
     {
         Console.WriteLine($"[{Class}] {Name}");
         Console.WriteLine($"  HP: {Health}");
-        Console.WriteLine($"  STR: {Strength}  INT: {Intelligence}  AGI: {Agility}");
+        Console.WriteLine($"  STR: {Strength}  INT: {Intelligence}  AGI: {Agility} Aur: {Aura} Mgc: {Magic}" ); /* dodalem tu dwie statystyki kopiując kod z wczesniej */
     }
 }
